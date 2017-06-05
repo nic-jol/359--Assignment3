@@ -129,7 +129,7 @@ Wait:
  *	RETURNS: nothing
  */
 Print_Message:
-
+	
 
 
 
@@ -137,8 +137,7 @@ Print_Message:
 
 	bx	lr
 
-// Maybe don't use this here either
-halt$:	b	halt$
+
 
 
 .section	.data
@@ -154,26 +153,16 @@ start_pressed:
 base_pressed:
 	.ascii	"You have pressed "		// 17 characters
 
-y_button:
-	.ascii	"Y\r\n"		// 3 characters
-
-x_button:
-	.ascii	"X\r\n"		// 3 characters
-
-a_button:
-	.ascii	"A\r\n"		// 3 characters
-
 b_button:
 	.ascii	"B\r\n"		// 3 characters
 
-right_jp:
-	.ascii	"Joy-pad RIGHT\r\n"		// 15 characters
+y_button:
+	.ascii	"Y\r\n"		// 3 characters
 
-left_jp:
-	.ascii	"Joy-pad LEFT\r\n"		// 14 characters
+select_button:
+	.ascii	"Select\r\n"	// 3 characters
 
-right_jp:
-	.ascii	"Joy-pad RIGHT\r\n"		// 15 characters
+// Start is only to terminate
 
 up_jp:
 	.ascii	"Joy-pad UP\r\n"		// 13 characters
@@ -181,6 +170,20 @@ up_jp:
 down_jp:
 	.ascii	"Joy-pad DOWN\r\n"		// 14 characters
 
+left_jp:
+	.ascii	"Joy-pad LEFT\r\n"		// 14 characters
 
+right_jp:
+	.ascii	"Joy-pad RIGHT\r\n"		// 15 characters
 
+a_button:
+	.ascii	"A\r\n"		// 3 characters
 
+x_button:
+	.ascii	"X\r\n"		// 3 characters
+
+left_button:
+	.ascii	"Left\r\n"		// 6 characters
+
+right_button:
+	.ascii	"Right\r\n"		// 7 characters
